@@ -1,0 +1,88 @@
+/* Poppins font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+/* Material Icons */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* All css variables */
+:root {
+  --primary-color: #5851d8;
+  --primary-bg-color: #ecf4ff;
+  --secondary-bg-color: #ffffff;
+  --dark-text-color: #040405;
+  --primary-text-color: #0e1021;
+  --light-text-color: #232b4d;
+  --fancy-dark-text-color: #3f2e53;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-text-color);
+}
+
+p,
+ul,
+li {
+  font-size: 0.87rem;
+}
+
+.text-field,
+.text-area {
+  width: 100%;
+  font-size: 0.8rem;
+  margin: 1.1em 0;
+  padding: 0.7em 1em;
+  border-radius: 0.3em;
+  border: 2px solid #ebf1fa;
+  background-color: #ffffff;
+}
+
+.text-area--vertical {
+  resize: vertical;
+}
+
+.text-area--horizontal {
+  resize: horizontal;
+}
+
+/* Text Area and Text field which have a label */
+label + .text-field,
+.text-area {
+  margin-top: 0.6em;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.btn__icon {
+  font-size: 0.95rem;
+}
+
+.btn__icon--left {
+  margin-right: 0.5em;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--dark-text-color);
+}
