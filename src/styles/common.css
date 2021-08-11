@@ -113,6 +113,7 @@ label > .text-field,
   border-radius: 0.2rem;
   display: flex;
   align-items: center;
+  text-decoration: none;
   background-color: var(--primary-color);
 }
 
