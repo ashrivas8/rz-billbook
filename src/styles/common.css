@@ -160,6 +160,7 @@ label > .text-field,
   display: flex;
   align-items: center;
   border-left: 0.3rem solid transparent;
+  margin-bottom: 0.4em;
 }
 
 .nav-item i {
@@ -225,6 +226,16 @@ label > .text-field,
 .clickable-table > tbody > tr:hover {
   transform: scale(1.02);
   transition: transform ease 0.2s;
+}
+
+.chip--yellow {
+  padding: 0.1em 0.4em;
+  background-color: rgb(248,236,203);
+}
+
+.chip--green {
+  padding: 0.1em 0.4em;
+  background-color: rgb(223,249,250);
 }
 
 @media screen and (max-width: 900px) {
