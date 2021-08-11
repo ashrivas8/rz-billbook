@@ -178,7 +178,6 @@ label > .text-field,
 
 .content {
   width: 100%;
-  max-width: 1000px;
   padding: 1.5rem 4rem;
 }
 
@@ -215,6 +214,15 @@ label > .text-field,
 
 .form__row .btn-wrapper {
   margin: auto;
+}
+
+.clickable-table > tbody > tr {
+  cursor: pointer;
+}
+
+.clickable-table > tbody > tr:hover {
+  transform: scale(1.02);
+  transition: transform ease 0.2s;
 }
 
 @media screen and (max-width: 900px) {
