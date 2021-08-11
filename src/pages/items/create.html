@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <title>Billbook | Create New Item</title>
+  </head>
+
+  <body class="dashboard">
+    <nav class="nav-bar">
+      <ul>
+        <a href="../customers/">
+          <li class="nav-item"><i class="material-icons">person</i> Customers</li>
+        </a>
+        <a href="/">
+          <li class="nav-item nav-item--active"><i class="material-icons">star</i>Items</li>
+        </a>
+        <a href="../invoice">
+          <li class="nav-item"><i class="material-icons">description</i>Invoices</li>
+        </a>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <header class="content__header">
+        <h1>New Item</h1>
+      </header>
+
+      <div class="form">
+        <div class="form__row">
+        <label for="name"
+          >Name
+          <input type="text" name="name" class="text-field" />
+        </label>
+        <label for="price"
+          >Price
+          <input type="text" name="price" class="text-field" />
+        </label>
+        </div>
+        <label for="description">
+          Description
+          <textarea
+            rows="5"
+            type="text"
+            name="description"
+            class="text-area text-area--vertical"
+          ></textarea>
+        </label>
+
+        <button class="btn btn-primary">
+          <i class="material-icons btn__icon btn__icon--left">save</i>Save Item
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
