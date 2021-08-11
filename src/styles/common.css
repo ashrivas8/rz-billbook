@@ -13,11 +13,11 @@
 :root {
   font-family: 'Poppins', sans-serif;
   --primary-color: #5851d8;
-  --primary-bg-color: #ecf4ff;
+  --primary-bg-color: #f2f7fd;
   --secondary-bg-color: #ffffff;
   --dark-text-color: #040405;
   --primary-text-color: #0e1021;
-  --light-text-color: #232b4d;
+  --light-text-color: #31364e;
   --fancy-dark-text-color: #3f2e53;
 }
 
@@ -42,8 +42,37 @@ h6 {
 p,
 ul,
 li,
+td,
+th,
 label {
   font-size: 0.87rem;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+td,
+th {
+  min-width: 6.5rem;
+}
+
+th {
+  padding: 0 1.2em;
+  text-align: left;
+  font-weight: 500;
+  height: 1.5em;
+  text-transform: uppercase;
+  color: var(--fancy-dark-text-color);
+}
+
+td {
+  padding: 2.5em 1.2em;
+  font-weight: 300;
+  line-height: 1.3rem;
+  color: var(--light-text-color);
+  background-color: var(--secondary-bg-color);
 }
 
 textarea {
@@ -105,7 +134,7 @@ label > .text-field,
 
 .nav-bar {
   width: 20vw;
-  min-width: 200px;
+  min-width: 250px;
   padding-top: 1.5rem;
   background-color: var(--secondary-bg-color);
   box-shadow: 2px 0px 7px 0px rgb(0 0 0 / 10%);
@@ -149,6 +178,7 @@ label > .text-field,
 
 .content {
   width: 100%;
+  max-width: 1000px;
   padding: 1.5rem 4rem;
 }
 
@@ -168,7 +198,6 @@ label > .text-field,
 
 .form {
   padding: 2rem;
-  max-width: 800px;
   border-radius: 0.2rem;
   background-color: var(--secondary-bg-color);
   box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 10%);
