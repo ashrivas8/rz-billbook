@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <title>Billbook | Items</title>
+  </head>
+
+  <body class="dashboard">
+    <nav class="nav-bar">
+      <ul>
+        <a href="../customers">
+          <li class="nav-item"><i class="material-icons">person</i> Customers</li>
+        </a>
+        <a href="#">
+          <li class="nav-item nav-item--active"><i class="material-icons">star</i>Items</li>
+        </a>
+        <a href="../invoice">
+          <li class="nav-item"><i class="material-icons">description</i>Invoices</li>
+        </a>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <header class="content__header">
+        <h1>Items</h1>
+        <a class="btn" href="create.html">
+          <i class="material-icons btn__icon btn__icon--left">add</i>Add Item
+        </a>
+      </header>
+
+      <table class="clickable-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Added On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MODEL S</td>
+            <td>
+              With high-strength architecture and a floor-mounted battery pack allowing for
+              incredible impact protection.
+            </td>
+            <td>₹350</td>
+            <td>06 Aug 2020</td>
+          </tr>
+          <tr>
+            <td>MODEL 3</td>
+            <td>
+              Built for Safety Safety is the most important part of the overall Model 3 design
+            </td>
+            <td>₹800</td>
+            <td>06 Aug 2020</td>
+          </tr>
+          <tr>
+            <td>MODEL X</td>
+            <td>
+              Built from the ground up as an electric vehicle, the body, chassis, restraints and
+              battery technology provide a very low probability of occupant injury.
+            </td>
+            <td>₹80</td>
+            <td>06 Aug 2020</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
