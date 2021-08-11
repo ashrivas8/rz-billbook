@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <title>Billbook | Create New Customer</title>
+  </head>
+
+  <body class="dashboard">
+    <nav class="nav-bar">
+      <ul>
+        <a href="#">
+          <li class="nav-item nav-item--active"><i class="material-icons">person</i> Customers</li>
+        </a>
+        <a href="../items/">
+          <li class="nav-item"><i class="material-icons">star</i>Items</li>
+        </a>
+        <a href="../invoice">
+          <li class="nav-item"><i class="material-icons">description</i>Invoices</li>
+        </a>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <header class="content__header">
+        <h1>New Customer</h1>
+      </header>
+
+      <div class="form">
+        <div class="form__row">
+          <label for="name"
+            >Name
+            <input type="text" name="name" class="text-field" />
+          </label>
+          <label for="phone"
+            >Phone
+            <input type="tel" name="phone" class="text-field" />
+          </label>
+        </div>
+        <div class="form__row">
+          <label for="email"
+            >Email
+            <input type="tel" name="email" class="text-field" />
+          </label>
+          <div class="btn-wrapper">
+            <button class="btn btn-primary">
+              <i class="material-icons btn__icon btn__icon--left">save</i>Save Customer
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

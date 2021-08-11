@@ -167,7 +167,7 @@ label > .text-field,
 }
 
 .form {
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 800px;
   border-radius: 0.2rem;
   background-color: var(--secondary-bg-color);
@@ -175,7 +175,7 @@ label > .text-field,
 }
 
 .form__row {
-  gap: 1rem;
+  gap: 1.5rem;
   width: 100%;
   display: flex;
 }
@@ -184,9 +184,17 @@ label > .text-field,
   flex: 1;
 }
 
+.form__row .btn-wrapper {
+  margin: auto;
+}
+
 @media screen and (max-width: 900px) {
   .form__row {
     flex-direction: column;
     gap: 0;
+  }
+
+  .form__row .btn-wrapper {
+    margin: initial;
   }
 }
