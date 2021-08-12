@@ -36,7 +36,7 @@
       </button>
     </header>
 
-    <div class="section">
+    <div class="section" style="justify-content: space-between;">
       <div class="billing-details">
         <div>
           <span class="billing-details__heading">Bill to</span>
@@ -46,7 +46,36 @@
         </div>
         <button class="btn btn--text">Change</button>
       </div>
-      <!-- <span>inputs</span> -->
+      <div class="input-details">
+        <label for="issue_date"
+          >Issued At
+          <div class="input_container">
+            <input type="text" name="issue_date" class="input" value="06 Aug 2020" />
+            <i class="material-icons input_icon">calendar_today</i>
+          </div>
+        </label>
+        <label for="due"
+          >Due Date
+          <div class="input_container">
+            <input type="text" name="due" class="input" value="13 Aug 2020" />
+            <i class="material-icons input_icon">calendar_today</i>
+          </div>
+        </label>
+        <label for="inv_no"
+          >Invoice Number
+          <div class="input_container">
+            <input type="text" name="inv_no" class="input" value="INV - 000011" />
+            <i class="material-icons input_icon">tag</i>
+          </div>
+        </label>
+        <label for="ref_no"
+          >Ref Number
+          <div class="input_container">
+            <input type="text" name="ref_no" class="input" value="" />
+            <i class="material-icons input_icon">tag</i>
+          </div>
+        </label>
+      </div>
     </div>
 
     <div class="section">
@@ -63,7 +92,7 @@
           <tr>
             <td>Model S</td>
             <td>
-              <input type="number" />
+              <input type="number" value="2" />
             </td>
             <td>&#8377;350</td>
             <td>
@@ -74,7 +103,7 @@
           <tr>
             <td>Model 3</td>
             <td>
-              <input type="number" />
+              <input type="number" value="1"/>
             </td>
             <td>&#8377;800</td>
             <td>

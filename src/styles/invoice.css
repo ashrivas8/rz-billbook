@@ -8,8 +8,10 @@
 .billing-details {
   display: flex;
   border: 2px solid #ebf1fa;
-  background-color: #ffffff;
+  background-color: var(--secondary-bg-color);
   padding:0.4em 0.65em 0.45em 0.55em;
+  height: 120px;
+  max-width: 450px;
 }
 
 .billing-details__heading {
@@ -76,7 +78,7 @@ td > input {
   padding: 0.7em 1em;
   border-radius: 0.3em;
   border: 2px solid #ebf1fa;
-  background-color: #ffffff;
+  background-color: var(--secondary-bg-color);
 }
 
 td > i {
@@ -105,9 +107,10 @@ td > i {
   display: inline-block;
   background-color: var(--secondary-bg-color);
   border: 2px solid #ebf1fa;
-  padding: 0 1.15em;
+  padding: 0 1.15em 1em 1.15em;
   width: 45%;
   text-transform: uppercase;
+  height: max-content;
 }
 
 .info-row {
@@ -127,5 +130,42 @@ td > i {
 
 .info-row:nth-last-child(1) {
   margin-top: 0.85em;
+}
+
+.input_container {
+  position:relative;
+  background:var(--secondary-bg-color);
+  padding-left: 2.3em;
+  /* direction: rtl; */
+  /* width: 200px; */
+  border-radius: 0.3em;
+  border: 2px solid #ebf1fa;
+}
+
+.input-details {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.2em;
+  justify-content: space-around;
+  max-width: 500px;
+  min-height: 170px;
+}
+
+.input {
+  height: 2.5em;
+  margin:0;
+  padding-right: 0.2em;
+  padding-left: 0.4em;
+  width: 100%;
+  border: 0 solid transparent;
+}
+
+.input_icon {
+  position:absolute;
+  bottom:0.8em;
+  left:0.25em;
+  width:0.4em;
+  height:0.4em;
+  color: var(--light-grey-text);
 }
 
