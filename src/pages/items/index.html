@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/common.css" />
+    <script defer src="/script/main.js"></script>
     <title>Billbook | Items</title>
   </head>
 
   <body class="dashboard">
-    <nav class="nav-bar">
+    <nav class="nav-bar" id="nav-bar">
       <ul>
         <a href="/pages/customers">
           <li class="nav-item"><i class="material-icons">person</i> Customers</li>
@@ -20,6 +21,23 @@
         <a href="/pages/invoice">
           <li class="nav-item"><i class="material-icons">description</i>Invoices</li>
         </a>
+      </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li class="bottom-nav-item">
+          <a href="/pages/customers"><i class="material-icons">person</i></a>
+        </li>
+        <li class="bottom-nav-item bottom-nav-item--active">
+          <a href="#"><i class="material-icons">star</i></a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="/pages/invoice"><i class="material-icons">description</i></a>
+        </li>
+        <li class="bottom-nav-item">
+          <button onclick="showNavBar(event)"><i class="material-icons">menu</i></button>
+        </li>
       </ul>
     </nav>
 
