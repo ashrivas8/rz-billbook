@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/common.css" />
     <link rel="stylesheet" href="../../styles/invoice.css" />
+    <script defer src="/script/main.js"></script>
     <title>Billbook | Create New Invoice</title>
 </head>
 
-<body class="dashboard">
-  <nav class="nav-bar">
+<body class="dashboard" style="overflow-y: auto;">
+  <nav class="nav-bar" id="nav-bar">
     <ul>
       <a href="/pages/customers">
         <li class="nav-item"><i class="material-icons">person</i> Customers</li>
@@ -27,6 +28,23 @@
     </ul>
   </nav>
 
+  <nav class="bottom-nav">
+    <ul>
+      <li class="bottom-nav-item">
+        <a href="/pages/customers"><i class="material-icons">person</i></a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="/pages/items"><i class="material-icons">star</i></a>
+      </li>
+      <li class="bottom-nav-item bottom-nav-item--active">
+        <a href="#"><i class="material-icons">description</i></a>
+      </li>
+      <li class="bottom-nav-item">
+        <button onclick="showNavBar(event)"><i class="material-icons">menu</i></button>
+      </li>
+    </ul>
+  </nav>
+
   <main class="content">
     <header class="content__header">
       <h1>New Invoice</h1>
@@ -36,7 +54,7 @@
       </button>
     </header>
 
-    <div class="section" style="justify-content: space-between;">
+    <div class="section section--sb">
       <div class="billing-details">
         <div>
           <span class="billing-details__heading">Bill to</span>
@@ -79,59 +97,63 @@
     </div>
 
     <div class="section">
-      <table>
-        <thead>
-          <tr>
-            <th>Items</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Model S</td>
-            <td>
-              <input type="number" value="2" />
-            </td>
-            <td>&#8377;350</td>
-            <td>
-              &#8377;700
-              <i class="material-icons row-delete">delete</i>
-            </td>
-          </tr>
-          <tr>
-            <td>Model 3</td>
-            <td>
-              <input type="number" value="1"/>
-            </td>
-            <td>&#8377;800</td>
-            <td>
-              &#8377;800
-              <i class="material-icons row-delete" role="button">delete</i>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <button class="btn btn--text add-btn">
-        <i class="material-icons btn__icon--large btn__icon--left" role="button">
-          shopping_basket
-        </i>
-        Add an Item
-      </button>
-      <div class="divider divider--full"></div>
+        <div class="scrollable-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Items</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Model S</td>
+                <td>
+                  <input type="number" value="2" />
+                </td>
+                <td>&#8377;350</td>
+                <td>
+                  &#8377;700
+                  <i class="material-icons row-delete">delete</i>
+                </td>
+              </tr>
+              <tr>
+                <td>Model 3</td>
+                <td>
+                  <input type="number" value="1"/>
+                </td>
+                <td>&#8377;800</td>
+                <td>
+                  &#8377;800
+                  <i class="material-icons row-delete" role="button">delete</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="btn btn--text add-btn">
+          <i class="material-icons btn__icon--large btn__icon--left" role="button">
+            shopping_basket
+          </i>
+          Add an Item
+        </button>
+        <div class="divider divider--full"></div>
     </div>
 
-    <div class="section" style="justify-content: space-between;">
-      <label for="notes">
-        Notes
-        <textarea
-          rows="5"
-          type="text"
-          name="description"
-          class="text-area text-area--vertical"
-        ></textarea>
-      </label>
+    <div class="section section--sb">
+      <div style="display: flex;">
+        <label for="notes">
+          Notes
+          <textarea
+            rows="5"
+            type="text"
+            name="description"
+            class="text-area text-area--vertical"
+          ></textarea>
+        </label>
+    </div>
 
       <div class="checkout-info">
         <div class="info-row">

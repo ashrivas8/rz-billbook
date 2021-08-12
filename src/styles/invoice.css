@@ -30,6 +30,10 @@
   display: flex;
 }
 
+.section--sb {
+  justify-content: space-between;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -48,7 +52,6 @@ tr {
 
 .section:nth-last-child(1) {
   margin-top: 2em;
-  flex-direction: row;
 }
 
 th {
@@ -111,6 +114,7 @@ td > i {
   width: 45%;
   text-transform: uppercase;
   height: max-content;
+  min-width: 250px;
 }
 
 .info-row {
@@ -136,8 +140,6 @@ td > i {
   position:relative;
   background:var(--secondary-bg-color);
   padding-left: 2.3em;
-  /* direction: rtl; */
-  /* width: 200px; */
   border-radius: 0.3em;
   border: 2px solid #ebf1fa;
 }
@@ -169,3 +171,22 @@ td > i {
   color: var(--light-grey-text);
 }
 
+@media screen and (max-width: 900px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .checkout-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-details {
+    margin-top: 1.5em;
+    flex-direction: column;
+  }
+
+  .input-details > label {
+    margin-top: 1em;
+  }
+}
