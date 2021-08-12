@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/common.css" />
-    <!-- <link rel="stylesheet" href="../../styles/invoice.css" /> -->
+    <link rel="stylesheet" href="../../styles/invoice.css" />
     <title>Billbook | Create New Invoice</title>
 </head>
 
 <body class="dashboard">
   <nav class="nav-bar">
     <ul>
-      <a href="../customers/">
+      <a href="/pages/customers">
         <li class="nav-item"><i class="material-icons">person</i> Customers</li>
       </a>
-      <a href="../items/">
+      <a href="/pages/items">
         <li class="nav-item"><i class="material-icons">star</i>Items</li>
       </a>
-      <a href="/">
-        <li class="nav-item nav-item--active"><i class="material-icons">description</i>Invoices</li>
+      <a href="#">
+        <li class="nav-item nav-item--active">
+          <i class="material-icons">description</i>
+          Invoices
+        </li>
       </a>
     </ul>
   </nav>
@@ -32,7 +35,100 @@
         Save Invoice
       </button>
     </header>
-    
+
+    <div class="section">
+      <div class="billing-details">
+        <div>
+          <span class="billing-details__heading">Bill to</span>
+          <div class="billing-details__content">
+            Buck Miller 8889913444 buck@miller.com
+          </div>
+        </div>
+        <button class="btn btn--text">Change</button>
+      </div>
+      <!-- <span>inputs</span> -->
+    </div>
+
+    <div class="section">
+      <table>
+        <thead>
+          <tr>
+            <th>Items</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Model S</td>
+            <td>
+              <input type="number" />
+            </td>
+            <td>&#8377;350</td>
+            <td>
+              &#8377;700
+              <i class="material-icons row-delete">delete</i>
+            </td>
+          </tr>
+          <tr>
+            <td>Model 3</td>
+            <td>
+              <input type="number" />
+            </td>
+            <td>&#8377;800</td>
+            <td>
+              &#8377;800
+              <i class="material-icons row-delete" role="button">delete</i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn--text add-btn">
+        <i class="material-icons btn__icon--large btn__icon--left" role="button">
+          shopping_basket
+        </i>
+        Add an Item
+      </button>
+      <div class="divider divider--full"></div>
+    </div>
+
+    <div class="section" style="justify-content: space-between;">
+      <label for="notes">
+        Notes
+        <textarea
+          rows="5"
+          type="text"
+          name="description"
+          class="text-area text-area--vertical"
+        ></textarea>
+      </label>
+
+      <div class="checkout-info">
+        <div class="info-row">
+          <span class="info-row__left">Model S</span>
+          <div>
+            <span style="margin-right: 1.8em;">x2</span>
+            <span>&#8377;700</span>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <span class="info-row__left">Model 3</span>
+          <div>
+            <span style="margin-right: 1.8em;">x1</span>
+            <span>&#8377;800</span>
+          </div>
+        </div>
+
+        <div class="divider divider--full divider--mg-top"></div>
+        <div class="info-row">
+          <span class="info-row__left">Total Amount</span>
+          <span class="info-row__right">&#8377;1500</span>
+        </div>
+
+      </div>
+    </div>
   </main>
 </body>
 </html>
