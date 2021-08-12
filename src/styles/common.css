@@ -19,6 +19,7 @@
   --primary-text-color: #0e1021;
   --light-text-color: #31364e;
   --fancy-dark-text-color: #3f2e53;
+  --light-grey-text: #c2b7b7;
 }
 
 html {
@@ -93,6 +94,7 @@ textarea {
   border-radius: 0.3em;
   border: 2px solid #ebf1fa;
   background-color: #ffffff;
+  min-width: 250px;
 }
 
 .text-area--vertical {
@@ -122,8 +124,18 @@ label > .text-field,
   background-color: var(--primary-color);
 }
 
+.btn--text {
+  background-color: inherit;
+  padding: 0;
+  color: var(--primary-color);
+}
+
 .btn__icon {
   font-size: 1rem;
+}
+
+.btn__icon--large {
+  font-size: 1.15rem;
 }
 
 .btn__icon--left {

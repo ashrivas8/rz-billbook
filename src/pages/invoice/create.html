@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <link rel="stylesheet" href="../../styles/invoice.css" />
+    <script defer src="/script/main.js"></script>
+    <title>Billbook | Create New Invoice</title>
+</head>
+
+<body class="dashboard" style="overflow-y: auto;">
+  <nav class="nav-bar" id="nav-bar">
+    <ul>
+      <a href="/pages/customers">
+        <li class="nav-item"><i class="material-icons">person</i> Customers</li>
+      </a>
+      <a href="/pages/items">
+        <li class="nav-item"><i class="material-icons">star</i>Items</li>
+      </a>
+      <a href="#">
+        <li class="nav-item nav-item--active">
+          <i class="material-icons">description</i>
+          Invoices
+        </li>
+      </a>
+    </ul>
+  </nav>
+
+  <nav class="bottom-nav">
+    <ul>
+      <li class="bottom-nav-item">
+        <a href="/pages/customers"><i class="material-icons">person</i></a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="/pages/items"><i class="material-icons">star</i></a>
+      </li>
+      <li class="bottom-nav-item bottom-nav-item--active">
+        <a href="#"><i class="material-icons">description</i></a>
+      </li>
+      <li class="bottom-nav-item">
+        <button onclick="showNavBar(event)"><i class="material-icons">menu</i></button>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <header class="content__header">
+      <h1>New Invoice</h1>
+      <button class="btn">
+        <i class="material-icons btn__icon btn__icon--left">save</i>
+        Save Invoice
+      </button>
+    </header>
+
+    <div class="section section--sb">
+      <div class="billing-details">
+        <div>
+          <span class="billing-details__heading">Bill to</span>
+          <div class="billing-details__content">
+            Buck Miller 8889913444 buck@miller.com
+          </div>
+        </div>
+        <button class="btn btn--text">Change</button>
+      </div>
+      <div class="input-details">
+        <label for="issue_date"
+          >Issued At
+          <div class="input_container">
+            <input type="text" name="issue_date" class="input" value="06 Aug 2020" />
+            <i class="material-icons input_icon">calendar_today</i>
+          </div>
+        </label>
+        <label for="due"
+          >Due Date
+          <div class="input_container">
+            <input type="text" name="due" class="input" value="13 Aug 2020" />
+            <i class="material-icons input_icon">calendar_today</i>
+          </div>
+        </label>
+        <label for="inv_no"
+          >Invoice Number
+          <div class="input_container">
+            <input type="text" name="inv_no" class="input" value="INV - 000011" />
+            <i class="material-icons input_icon">tag</i>
+          </div>
+        </label>
+        <label for="ref_no"
+          >Ref Number
+          <div class="input_container">
+            <input type="text" name="ref_no" class="input" value="" />
+            <i class="material-icons input_icon">tag</i>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+        <div class="scrollable-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Items</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Model S</td>
+                <td>
+                  <input type="number" value="2" />
+                </td>
+                <td>&#8377;350</td>
+                <td>
+                  &#8377;700
+                  <i class="material-icons row-delete">delete</i>
+                </td>
+              </tr>
+              <tr>
+                <td>Model 3</td>
+                <td>
+                  <input type="number" value="1"/>
+                </td>
+                <td>&#8377;800</td>
+                <td>
+                  &#8377;800
+                  <i class="material-icons row-delete" role="button">delete</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="btn btn--text add-btn">
+          <i class="material-icons btn__icon--large btn__icon--left" role="button">
+            shopping_basket
+          </i>
+          Add an Item
+        </button>
+        <div class="divider divider--full"></div>
+    </div>
+
+    <div class="section section--sb">
+      <div style="display: flex;">
+        <label for="notes">
+          Notes
+          <textarea
+            rows="5"
+            type="text"
+            name="description"
+            class="text-area text-area--vertical"
+          ></textarea>
+        </label>
+    </div>
+
+      <div class="checkout-info">
+        <div class="info-row">
+          <span class="info-row__left">Model S</span>
+          <div>
+            <span style="margin-right: 1.8em;">x2</span>
+            <span>&#8377;700</span>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <span class="info-row__left">Model 3</span>
+          <div>
+            <span style="margin-right: 1.8em;">x1</span>
+            <span>&#8377;800</span>
+          </div>
+        </div>
+
+        <div class="divider divider--full divider--mg-top"></div>
+        <div class="info-row">
+          <span class="info-row__left">Total Amount</span>
+          <span class="info-row__right">&#8377;1500</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
