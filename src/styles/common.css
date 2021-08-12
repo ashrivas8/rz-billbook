@@ -54,6 +54,10 @@ table {
   border-spacing: 0 1em;
 }
 
+.scrollable-table {
+  overflow-x: auto;
+}
+
 td,
 th {
   min-width: 6.5rem;
@@ -135,9 +139,10 @@ label > .text-field,
 }
 
 .nav-bar {
-  width: 20vw;
+  width: 250px;
   min-width: 250px;
   padding-top: 1.5rem;
+  transition: left 200ms ease-in;
   background-color: var(--secondary-bg-color);
   box-shadow: 2px 0px 7px 0px rgb(0 0 0 / 10%);
 }
@@ -198,6 +203,49 @@ label > .text-field,
   color: var(--dark-text-color);
 }
 
+.bottom-nav {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px -2px 10px 0px rgb(0 0 0 / 10%);
+  background-color: var(--secondary-bg-color);
+}
+
+.bottom-nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bottom-nav-item {
+  padding: 1em 2em;
+  border-bottom: 2px solid transparent;
+}
+
+.bottom-nav-item > button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.bottom-nav-item > a,
+.bottom-nav-item > button {
+  color: #a4acc1;
+}
+
+.bottom-nav-item--active {
+  background-color: var(--primary-bg-color);
+  border-color: var(--primary-color);
+}
+
+.bottom-nav-item--active > a,
+.bottom-nav-item--active > button {
+  color: var(--primary-color);
+}
+
 .form {
   padding: 2rem;
   border-radius: 0.2rem;
@@ -233,11 +281,11 @@ label > .text-field,
 }
 
 .chip--yellow {
-  background-color: rgb(248,236,203);
+  background-color: rgb(248, 236, 203);
 }
 
 .chip--green {
-  background-color: rgb(223,249,250);
+  background-color: rgb(223, 249, 250);
 }
 
 @media screen and (max-width: 900px) {
@@ -248,5 +296,31 @@ label > .text-field,
 
   .form__row .btn-wrapper {
     margin: initial;
+  }
+
+  .content {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bottom-nav {
+    display: block;
+  }
+
+  body {
+    margin-bottom: 1rem;
+  }
+
+  .nav-bar {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    left: -250px;
+  }
+
+  .nav-bar--show {
+    left: 0;
   }
 }
