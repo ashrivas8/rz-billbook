@@ -55,10 +55,6 @@ table {
   border-spacing: 0 1em;
 }
 
-.scrollable-table {
-  overflow-x: auto;
-}
-
 td,
 th {
   min-width: 6.5rem;
@@ -286,6 +282,10 @@ label > .text-field,
 .clickable-table > tbody > tr:hover {
   transform: scale(1.02);
   transition: transform ease 0.2s;
+}
+
+.scrollable {
+  overflow-x: auto;
 }
 
 .chip {
