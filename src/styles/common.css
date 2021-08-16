@@ -55,10 +55,6 @@ table {
   border-spacing: 0 1em;
 }
 
-.scrollable-table {
-  overflow-x: auto;
-}
-
 td,
 th {
   min-width: 6.5rem;
@@ -163,21 +159,21 @@ label > .text-field,
   list-style: none;
 }
 
-.nav-bar ul a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .nav-item {
-  padding: 0.9em 0;
-  padding-left: 2em;
   font-size: 0.8rem;
   font-weight: 500;
   cursor: pointer;
+  margin-bottom: 0.4em;
+  border-left: 0.3rem solid transparent;
+}
+
+.nav-bar > ul > li > a {
+  color: inherit;
+  padding: 0.9em 0;
+  padding-left: 2em;
   display: flex;
   align-items: center;
-  border-left: 0.3rem solid transparent;
-  margin-bottom: 0.4em;
+  text-decoration: none;
 }
 
 .nav-item i {
@@ -286,6 +282,10 @@ label > .text-field,
 .clickable-table > tbody > tr:hover {
   transform: scale(1.02);
   transition: transform ease 0.2s;
+}
+
+.scrollable {
+  overflow-x: auto;
 }
 
 .chip {
