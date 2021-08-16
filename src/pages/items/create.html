@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <script defer src="/script/main.js"></script>
+    <title>Billbook | Create New Item</title>
+  </head>
+
+  <body class="dashboard">
+    <nav class="nav-bar" id="nav-bar">
+      <ul>
+        <li class="nav-item">
+          <a href="/pages/customers"><i class="material-icons">person</i>Customers</a>
+        </li>
+        <li class="nav-item nav-item--active">
+          <a href="#"><i class="material-icons">star</i>Items</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/invoice"><i class="material-icons">description</i>Invoices</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li class="bottom-nav-item">
+          <button onclick="showNavBar(event)"><i class="material-icons">menu</i></button>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="/pages/customers"><i class="material-icons">person</i></a>
+        </li>
+        <li class="bottom-nav-item bottom-nav-item--active">
+          <a href="#"><i class="material-icons">star</i></a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="/pages/invoice"><i class="material-icons">description</i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <header class="content__header">
+        <h1>New Item</h1>
+      </header>
+
+      <div class="form">
+        <div class="form__row">
+        <label for="name"
+          >Name
+          <input type="text" name="name" class="text-field" />
+        </label>
+        <label for="price"
+          >Price
+          <input type="text" name="price" class="text-field" />
+        </label>
+        </div>
+        <label for="description">
+          Description
+          <textarea
+            rows="5"
+            type="text"
+            name="description"
+            class="text-area text-area--vertical"
+          ></textarea>
+        </label>
+
+        <button class="btn">
+          <i class="material-icons btn__icon btn__icon--left">save</i>Save Item
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/common.css" />
+    <script defer src="/script/main.js"></script>
+    <title>Billbook | Customers</title>
+  </head>
+
+  <body class="dashboard">
+    <nav class="nav-bar" id="nav-bar">
+      <ul>
+        <li class="nav-item nav-item--active">
+          <a href="#"><i class="material-icons">person</i>Customers</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/items"><i class="material-icons">star</i>Items</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/invoice"><i class="material-icons">description</i>Invoices</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li class="bottom-nav-item">
+          <button onclick="showNavBar(event)"><i class="material-icons">menu</i></button>
+        </li>
+        <li class="bottom-nav-item bottom-nav-item--active">
+          <a href="#"><i class="material-icons">person</i></a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="/pages/items"><i class="material-icons">star</i></a>
+        </li>
+        <li class="bottom-nav-item">
+          <a href="/pages/invoice"><i class="material-icons">description</i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <header class="content__header">
+        <h1>Customers</h1>
+        <a class="btn" href="/pages/customers/create.html">
+          <i class="material-icons btn__icon btn__icon--left">add</i>Add Customers
+        </a>
+      </header>
+
+      <div class="scrollable">
+        <table class="clickable-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Created On</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anissa Beler</td>
+              <td>+912048736636</td>
+              <td>void@razorpay.com</td>
+              <td>06 Aug 2020</td>
+            </tr>
+            <tr>
+              <td>Mellie Buckridge</td>
+              <td>888992222</td>
+              <td>hello@razorpay.com</td>
+              <td>06 Aug 2020</td>
+            </tr>
+            <tr>
+              <td>Ashlee Glover</td>
+              <td>9898761525</td>
+              <td>contact@razorpay.com</td>
+              <td>06 Aug 2020</td>
+            </tr>
+            <tr>
+              <td>Ms. Andreanne Auer PHD</td>
+              <td>4819699668</td>
+              <td>support@razorpay.com</td>
+              <td>06 Aug 2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
